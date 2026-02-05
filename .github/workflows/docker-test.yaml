@@ -1,0 +1,28 @@
+name: Docker Smoke Test
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  docker-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t func-demo:test .
+
+      - name: Run container
+        run: docker run -d -p 8080:80 --name func-demo func-demo:test
+
+      - name: Wait for container
+        run: sleep 10
+
+      - name: Curl Functions host
+        run: curl -i http://localhost:8080
+
