@@ -1,0 +1,17 @@
+[
+  {
+    "id": "test-id",
+    "eventType": "Microsoft.Storage.BlobCreated",
+    "subject": "/blobServices/default/containers/input/blobs/test.wav",
+    "eventTime": "2026-02-05T20:00:00Z",
+    "data": {
+      "api": "PutBlob",
+      "blobType": "BlockBlob",
+      "contentType": "audio/wav",
+      "contentLength": 12345,
+      "url": "http://127.0.0.1:10000/devstoreaccount1/input/test.wav"
+    },
+    "dataVersion": "",
+    "metadataVersion": "1"
+  }
+]

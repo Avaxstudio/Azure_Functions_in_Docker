@@ -1,0 +1,26 @@
+# OS fajlovi
+.DS_Store
+Thumbs.db
+
+
+# Terraform
+*.tfstate
+*.tfstate.*
+crash.log
+.terraform/
+.terraform.lock.hcl
+
+# Azure Functions lokalni fajlovi
+bin/
+obj/
+local.settings.json   
+extensions.csproj
+
+# Docker
+*.tar
+*.log
+
+# VS Code / IDE
+.vscode/
+.idea/
+Info.txt

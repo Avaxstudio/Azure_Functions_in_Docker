@@ -1,0 +1,8 @@
+{
+  "name": "process-audio-function",
+  "version": "1.0.0",
+  "dependencies": {
+    "@azure/storage-blob": "^12.15.0",
+    "fluent-ffmpeg": "^2.1.2"
+  }
+}
